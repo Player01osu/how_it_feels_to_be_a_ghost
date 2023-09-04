@@ -1,0 +1,26 @@
+C Hash Table
+=============
+Toy implementation of a hash table in C. My second implementation of
+a hash table, this time using a probe table as well as being a
+single header file.
+
+Make sure to define the following before using:
+
+#define HTABLE_KEY_EQ {compare function between two keys}
+#define HTABLE_KEY_TYPE {key type}
+#define HTABLE_VALUE_TYPE {value type}
+#define HTABLE_HASH_FUNCTION {hash function for key type}
+#define HTABLE_ELEM_DELETE {destructor for key and value}
+
+Check out tests for examples.
+
+Requirements
+------------
+In order to build you need GNU make.
+
+References
+----------
+CPP std::unordered_set: https://cplusplus.com/reference/unordered_set/unordered_set/
+Abseil CPP Node and Flat Hash Sets: https://github.com/abseil/abseil-cpp
+Matt Kulukundis' Talk on Implementing Swiss Hash Table: https://youtu.be/ncHmEUmJZf4
+First Hash Table Implementation: https://github.com/Player01osu/The_Me_You_Used_to_Know_Hung_Himself_And_Went_to_Hell
