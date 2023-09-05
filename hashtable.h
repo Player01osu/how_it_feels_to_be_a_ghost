@@ -224,4 +224,13 @@ size_t htable_clear(HTable *h)
 	return n;
 }
 
+#undef BUCKET_INIT
+#undef HTABLE_DELETED
+#undef DEFAULT_LFACTOR
+#undef HTABLE_KEY_EQ
+#undef HTABLE_KEY_TYPE
+#undef HTABLE_VALUE_TYPE
+#undef HTABLE_HASH_FUNCTION
+#undef HTABLE_ELEM_DELETE
+
 #endif
